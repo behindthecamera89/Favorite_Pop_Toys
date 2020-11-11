@@ -1,0 +1,41 @@
+body {
+    background-color: #242325;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #dc965a;
+    font-style: italic;
+    }
+ul {text-align: center;
+    margin: 100px;
+    background-color: #BBB891;
+    border-color: #b3b3b3;
+    padding: 50px;
+    background-size:400px;
+}
+li {
+    text-align: center;
+    border: #bbb891;
+    display: inline;
+    padding: 5px;
+    margin: 50px;
+    }
+
+    p {
+        color: #c8c8c8;
+    }
+#firstimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+
+#secondimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
+}
