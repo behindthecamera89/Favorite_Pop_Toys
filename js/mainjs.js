@@ -44,7 +44,7 @@ function askToPlay(){
 askToPlay();
 
 function popToy(){
-    let toy1 = prompt('how many pop toys do you want to see? Enter a number between 1 & 10!');
+    let toy1 = prompt('how many pop toys do you want to see? Enter a number between 1-10!');
     if(toy1 > 0 && toy1 <= 10){
         for(let i = 0; i < toy1; i = i + 1){
             document.write('<img src="https://blogscdn.thehut.net/wp-content/uploads/sites/39/2017/01/07112234/560_Ghost-Rider-Metallic-.jpg">')
@@ -52,6 +52,5 @@ function popToy(){
     } else {
         alert('invalid answer')
     }
-popToy();
 
 }
