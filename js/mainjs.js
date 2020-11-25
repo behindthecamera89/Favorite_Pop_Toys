@@ -3,7 +3,8 @@
 function whoThis(){
     let userName = prompt('What is your name?');
 
-    document.write('<h3>' + userName + '</h3>');
+    // document.write('<h2>' + userName + '</h2>');
+    document.getElementById("whosThisReplace").innerHTML = userName;
 }
 
 function timeofDay(){
@@ -41,16 +42,48 @@ function askToPlay(){
     guessingGame();
     wannaPlay = prompt ('Do you want to play again? (yes or no)')
 }
-askToPlay();
+
 
 function popToy(){
     let toy1 = prompt('how many pop toys do you want to see? Enter a number between 1-10!');
     if(toy1 > 0 && toy1 <= 10){
-        for(let i = 0; i < toy1; i = i + 1){
-            document.write('<img src="https://blogscdn.thehut.net/wp-content/uploads/sites/39/2017/01/07112234/560_Ghost-Rider-Metallic-.jpg">')
-        }
+        // for(let index = 0; index < toy1; index = index + 2){
+        //     document.write('<img src="https://blogscdn.thehut.net/wp-content/uploads/sites/39/2017/01/07112234/560_Ghost-Rider-Metallic-.jpg">')
+        //     console.log (index);
+        // }
+        var index = 5;
+        for(;index <= toy1;){
+          document.write('<img src="https://blogscdn.thehut.net/wp-content/uploads/sites/39/2017/01/07112234/560_Ghost-Rider-Metallic-.jpg">')
+          console.log (index);
+          index = index + 1
+      }
+        console.log ('finshLoop');
     } else {
-        alert('invalid answer')
+        alert('invalid answer' + ' ' + toy1)
     }
 
 }
+
+var speed = 90;
+console.log("Warning: You are driving above 80 mph");
+
+var speed = 90;
+if (speed > 80) {
+  console.log("Warning: You are driving above 80 mph");
+} else {
+  console.log("You are driving within the speed limit");
+}
+
+var speed = 90;
+if (speed) {
+  console.log("Warning: You are driving above 80 mph");
+} else {
+  console.log("You are driving within the speed limit");
+}
+
+function greet(name) {
+    return "Hello, " + name;
+  }
+  greet("Grace Hopper");
+
+  console.log(greet)
